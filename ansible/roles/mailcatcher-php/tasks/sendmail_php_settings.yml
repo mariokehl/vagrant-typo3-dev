@@ -1,0 +1,17 @@
+---
+- name: Configure PHP ini file
+  ini_file:
+    dest={{ mc_php_base_path }}
+    section="mail function"
+    option=sendmail_path
+    value="{{ mc_sendmail_cmd }}"
+  become: yes
+
+- name: Create PHP module symlinks
+  file: src={{ item.path }} dest={{ item.dest }} state=link
+  with_items:
+    - { path: "{{ mc_php_symlink_path }}", dest: "{{ mc_php_cli_path }}" }
+    - { path: "{{ mc_php_symlink_path }}", dest: "{{ mc_php_apache_path }}" }
+  notify:
+    - restart apache
+  become: yes

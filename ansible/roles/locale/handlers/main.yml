@@ -1,0 +1,4 @@
+# file: locale/handlers/main.yml
+
+- name: update tzdata
+  command: /usr/sbin/dpkg-reconfigure --frontend noninteractive tzdata

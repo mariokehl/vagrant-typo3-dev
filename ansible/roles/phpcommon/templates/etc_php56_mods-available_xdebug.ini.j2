@@ -1,0 +1,14 @@
+zend_extension = xdebug.so
+
+xdebug.remote_autostart = 0
+xdebug.remote_enable = 1
+xdebug.remote_handler = "dbgp"
+xdebug.remote_mode = "req"
+xdebug.remote_port = {{ xdebug_remote_port }}
+xdebug.remote_host = {{ xdebug_remote_host }}
+xdebug.profiler_enable = 0
+xdebug.profiler_output_dir = /tmp/
+xdebug.idekey = "vagrant"
+; required by TYPO3, default value: 100
+xdebug.max_nesting_level = {{ xdebug_max_nesting_level }}
+xdebug.remote_log = {{ xdebug_remote_log }}

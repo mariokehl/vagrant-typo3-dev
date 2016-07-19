@@ -1,0 +1,5 @@
+# file: php5/tasks/install.yml
+
+- name: PHP5 | Make sure php5 is installed
+  become: yes
+  apt: pkg=php5.6 state=latest

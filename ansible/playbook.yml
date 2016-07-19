@@ -1,0 +1,43 @@
+---
+- hosts: all
+  become: true
+  vars:
+    doc_root: /var/www
+    sys_packages:
+    - sendmail
+    - nfs-common
+    - nfs-kernel-server
+    - portmap
+    - git
+    - graphicsmagick
+    - imagemagick
+    - openjdk-7-jdk
+    - unzip
+    - mailutils
+    php_packages:
+    - php5.6-mysql
+    - php5.6-curl
+    - php5.6-imagick
+    - php5.6-gd
+    - php5.6-redis
+    - php5.6-mbstring
+    - php5.6-soap
+    - php5.6-xml
+    - php5.6-zip
+    - php5.6-apcu
+    - php5.6-dev #needed for xdebug
+    - php-pear #needed for xdebug
+    - php5.6-xdebug
+    php_ppa: php
+  roles:
+    - init
+    - locale
+    - apache
+    - mysql
+    - php5
+    - phpcommon
+    - phpcomposer
+    - joshualund.ruby-common
+    - perltwiesekt.ruby-2.3
+    - perlmonkey.mailcatcher
+    - mailcatcher-php

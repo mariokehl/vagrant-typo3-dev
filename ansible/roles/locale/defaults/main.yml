@@ -1,0 +1,5 @@
+# file: locale/defaults/main.yml
+
+# Basic settings
+locale: de_DE.UTF-8
+timezone: Europe/Berlin

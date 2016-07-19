@@ -1,0 +1,4 @@
+# file: phpcommon/tasks/main.yml
+
+- include: install.yml
+- include: configure.yml
