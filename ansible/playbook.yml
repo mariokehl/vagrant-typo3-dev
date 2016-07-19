@@ -15,19 +15,19 @@
     - unzip
     - mailutils
     php_packages:
-    - php5.6-mysql
-    - php5.6-curl
-    - php5.6-imagick
-    - php5.6-gd
-    - php5.6-redis
-    - php5.6-mbstring
-    - php5.6-soap
-    - php5.6-xml
-    - php5.6-zip
-    - php5.6-apcu
-    - php5.6-dev #needed for xdebug
+    - php5.5-mysql
+    - php5.5-curl
+    - php5.5-imagick
+    - php5.5-gd
+    - php5.5-redis
+    - php5.5-mbstring
+    - php5.5-soap
+    - php5.5-xml
+    - php5.5-zip
+    - php5.5-apcu
+    - php5.5-dev #needed for xdebug
     - php-pear #needed for xdebug
-    - php5.6-xdebug
+    - php5.5-xdebug
     php_ppa: php
   roles:
     - init

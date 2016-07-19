@@ -2,8 +2,8 @@
 
 - name: PHP5 | Update the php.ini
   template:
-    src: etc_php56_apache2_php.ini.j2
-    dest: /etc/php/5.6/apache2/php.ini
+    src: etc_php55_apache2_php.ini.j2
+    dest: /etc/php/5.5/apache2/php.ini
     owner: root
     group: root
     mode: 0644

@@ -2,4 +2,4 @@
 
 - name: PHP5 | Make sure php5 is installed
   become: yes
-  apt: pkg=php5.6 state=latest
+  apt: pkg=php5.5 state=latest

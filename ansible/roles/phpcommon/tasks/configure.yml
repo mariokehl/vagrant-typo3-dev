@@ -2,8 +2,8 @@
 
 - name: PHP5 | Set up APC configuration (apc.ini)
   template:
-    src: etc_php56_mods-available_apcu.ini.j2
-    dest: /etc/php/5.6/mods-available/apcu.ini
+    src: etc_php55_mods-available_apcu.ini.j2
+    dest: /etc/php/5.5/mods-available/apcu.ini
     owner: root
     group: root
     mode: 0644
@@ -12,8 +12,8 @@
 
 - name: PHP5 | Set up XDebug configuration (xdebug.ini)
   template:
-    src: etc_php56_mods-available_xdebug.ini.j2
-    dest: /etc/php/5.6/mods-available/xdebug.ini
+    src: etc_php55_mods-available_xdebug.ini.j2
+    dest: /etc/php/5.5/mods-available/xdebug.ini
     owner: root
     group: root
     mode: 0644
