@@ -3,7 +3,7 @@
 - name: PHP5 | correct PHP version selected
   alternatives:
     name: php
-    path: /usr/bin/php5.6
+    path: /usr/bin/php5.5
 
 - name: PHP5 | Update the php.ini
   template:
