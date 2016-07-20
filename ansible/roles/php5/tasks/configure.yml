@@ -1,5 +1,10 @@
 # file: php5/tasks/configure.yml
 
+- name: PHP5 | correct PHP version selected
+  alternatives:
+    name: php
+    path: /usr/bin/php5.6
+
 - name: PHP5 | Update the php.ini
   template:
     src: etc_php56_apache2_php.ini.j2
