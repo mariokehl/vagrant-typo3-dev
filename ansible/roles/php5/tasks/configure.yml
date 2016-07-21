@@ -7,8 +7,8 @@
 
 - name: PHP5 | Update the php.ini (cli)
   template:
-    src: etc_php56_cli_php.ini.j2
-    dest: /etc/php/5.6/cli/php.ini
+    src: etc_php55_cli_php.ini.j2
+    dest: /etc/php/5.5/cli/php.ini
     owner: root
     group: root
     mode: 0644
