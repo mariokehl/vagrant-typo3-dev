@@ -5,7 +5,15 @@
     name: php
     path: /usr/bin/php5.5
 
-- name: PHP5 | Update the php.ini
+- name: PHP5 | Update the php.ini (cli)
+  template:
+    src: etc_php56_cli_php.ini.j2
+    dest: /etc/php/5.6/cli/php.ini
+    owner: root
+    group: root
+    mode: 0644
+
+- name: PHP5 | Update the php.ini (apache2)
   template:
     src: etc_php55_apache2_php.ini.j2
     dest: /etc/php/5.5/apache2/php.ini
