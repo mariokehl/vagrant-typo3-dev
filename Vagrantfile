@@ -13,7 +13,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box_check_update = false
 
   # check for vbguest updates on each startup
-  config.vbguest.auto_update = false
+  if Vagrant.has_plugin?("vagrant-vbguest")
+    config.vbguest.auto_update = false
+  end
 
   # configure VM via Ansible
   config.vm.provision "ansible" do |ansible|
