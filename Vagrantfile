@@ -29,7 +29,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # override provider settings
   config.vm.provider "virtualbox" do |virtualbox, override|
-    override.vm.synced_folder "vHosts/", "/var/www/", id: "vagrant-root", type: "nfs", nfs_version: "3,nolock"
+    override.vm.synced_folder "vHosts/", "/var/www/", id: "vagrant-root", type: "nfs", mount_options: ['rw', 'vers=3,nolock', 'tcp', 'fsc' ,'actimeo=2']
 
     virtualbox.customize ["modifyvm", :id, "--memory", "2048"]
     virtualbox.customize ["modifyvm", :id, "--cpus", 2]
