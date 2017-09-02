@@ -19,13 +19,13 @@ Environment
    ```
    This user is also allowed to connect from outside the virtual machine.
 
-* __PHP__: PHP 5.6.x (with Xdebug v2.3.2)
+* __PHP__: PHP 7.0.x (with Xdebug v2.5.5)
 
 * __MailCatcher__: 0.6.4 (check out http://192.168.13.37:1080)
 
 Installation
 --------------
-*used VirtualBox 5.0.22, Vagrant 1.8.4 & Ansible 2.1.0*
+*used VirtualBox 5.1.26, Vagrant 1.9.8 & Ansible 2.3.2.0*
 
 1. Install both: [Vagrant](https://www.vagrantup.com/downloads.html) & [Ansible](http://docs.ansible.com/intro_installation.html)
 

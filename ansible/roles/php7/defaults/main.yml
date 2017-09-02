@@ -1,4 +1,4 @@
-# file: php5/defaults/main.yml
+# file: php7/defaults/main.yml
 
 # Basic settings
 max_execution_time: 240

@@ -10,4 +10,4 @@ apc_num_files_hint: 0
 xdebug_max_nesting_level: 400
 xdebug_remote_host: "10.0.2.2"
 xdebug_remote_port: 9000
-xdebug_remote_log: "/tmp/php5-xdebug.log"
+xdebug_remote_log: "/tmp/php7-xdebug.log"

@@ -15,29 +15,29 @@
     - unzip
     - mailutils
     php_packages:
-    - php5.6-mysql
-    - php5.6-curl
-    - php5.6-imagick
-    - php5.6-gd
-    - php5.6-redis
-    - php5.6-mbstring
-    - php5.6-soap
-    - php5.6-xml
-    - php5.6-zip
-    - php5.6-apcu
-    - php5.6-dev #needed for xdebug
+    - php7.0-mysql
+    - php7.0-curl
+    - php7.0-imagick
+    - php7.0-gd
+    - php7.0-redis
+    - php7.0-mbstring
+    - php7.0-soap
+    - php7.0-xml
+    - php7.0-zip
+    - php7.0-apcu
+    - php7.0-dev #needed for xdebug
     - php-pear #needed for xdebug
-    - php5.6-xdebug
+    - php7.0-xdebug
     php_ppa: php
   roles:
     - init
     - locale
     - apache
     - mysql
-    - php5
+    - php7
     - phpcommon
     - phpcomposer
     - joshualund.ruby-common
-    - perltwiesekt.ruby-2.3
+    - perltwiesekt.ruby-2.4
     - perlmonkey.mailcatcher
     - mailcatcher-php

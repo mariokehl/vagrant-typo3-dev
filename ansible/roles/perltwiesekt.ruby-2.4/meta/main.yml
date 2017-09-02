@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: "Mario Kehl"
-  description: "Ansible role that compiles and installs Ruby 2.3 (https://www.ruby-lang.org) and Bundler (http://bundler.io)."
+  description: "Ansible role that compiles and installs Ruby 2.4 (https://www.ruby-lang.org) and Bundler (http://bundler.io)."
   license: MIT
   min_ansible_version: 1.4
   platforms:
