@@ -42,7 +42,7 @@ Installation
 4. Modify your host database (e.g. /etc/hosts)
 
     ```
-    sudo sh -c 'echo "192.168.13.37 t3-cms.dev" >> /etc/hosts'
+    sudo sh -c 'echo "192.168.13.37 t3-cms.test" >> /etc/hosts'
     ```
 
 5. Create folder `mkdir -p vHosts/t3-cms/Web` and extract TYPO3 source/dummy package:
