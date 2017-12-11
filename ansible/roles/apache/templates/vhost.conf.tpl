@@ -9,33 +9,33 @@
 # use only name-based virtual hosts so the server doesn't need to worry about
 # IP addresses. This is indicated by the asterisks in the directives below.
 #
-# Please see the documentation at 
+# Please see the documentation at
 # <URL:http:/httpd.apache.org/docs/2.2/vhosts/>
 # for further details before you try to setup virtual hosts.
 #
 # You may use the command line option '-S' to verify your virtual host
 # configuration.
- 
+
 NameVirtualHost *:80
- 
+
 <Directory "{{ doc_root }}">
     Options ExecCGI Indexes MultiViews FollowSymLinks Includes
     AllowOverride All
     Order allow,deny
     Allow from all
- 
+
     DirectoryIndex index.php
     UseCanonicalName off
 </Directory>
- 
+
 <VirtualHost *:80>
-    ServerName local.dev
-    ServerAlias *.dev
+    ServerName local.test
+    ServerAlias *.test
     VirtualDocumentRoot {{ doc_root }}/%-2+/Web
     SetEnv TYPO3_CONTEXT Development
     SetEnv FLOW_CONTEXT Development
 </VirtualHost>
- 
+
 <VirtualHost *:80>
     ServerName local.prod
     ServerAlias *.prod
