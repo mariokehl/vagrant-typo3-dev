@@ -21,6 +21,7 @@
     - php7.0-gd
     - php7.0-redis
     - php7.0-mbstring
+    - php7.0-mcrypt
     - php7.0-soap
     - php7.0-xml
     - php7.0-zip
