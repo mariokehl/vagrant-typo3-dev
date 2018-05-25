@@ -2,7 +2,7 @@
 
 # Basic settings
 max_execution_time: 300
-max_input_vars: 1500
+max_input_vars: 3000
 post_max_size: '200M'
 upload_max_filesize: '200M'
 realpath_cache_size: '1024k'
