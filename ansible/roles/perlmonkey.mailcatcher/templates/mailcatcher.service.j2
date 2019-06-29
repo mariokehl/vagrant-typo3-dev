@@ -1,0 +1,11 @@
+[Unit]
+Description=Ruby MailCatcher
+Documentation=http://mailcatcher.me/
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/mailcatcher -f -v --ip={{ mailcatcher_ip }} --smtp-ip={{ mailcatcher_smtp_ip }} --smtp-port={{ mailcatcher_smtp_port }} --http-ip={{ mailcatcher_http_ip }} --http-port={{ mailcatcher_http_port }}
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

@@ -1,27 +1,7 @@
 # file: mysql/tasks/secure.yml
 
 - name: MySQL | Set the root password.
-  mysql_user:
-    user: root
-    host: "{{item}}"
-    password: "{{mysql_root_password}}"
-  with_items:
-   - "{{ansible_hostname}}"
-   - 127.0.0.1
-   - ::1
-   - localhost
-  when: ansible_hostname != 'localhost'
-
-- name: MySQL | Set the root password.
-  mysql_user:
-    user: root
-    host: "{{item}}"
-    password: "{{mysql_root_password}}"
-  with_items:
-   - 127.0.0.1
-   - ::1
-   - localhost
-  when: ansible_hostname == 'localhost'
+  command:  mysql -u root --execute="ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '"{{ mysql_root_password }}"';"
 
 - name: MySQL | Configure MySql for easy access as root user
   template:
@@ -34,10 +14,10 @@
 - name: MySQL | Remove anonymous MySQL server user
   mysql_user:
     name: ""
-    host: "{{item}}"
+    host: "{{ item }}"
     state: absent
   with_items:
-    - "{{ansible_hostname}}"
+    - "{{ ansible_hostname }}"
     - localhost
 
 - name: MySQL | Remove the MySQL test database

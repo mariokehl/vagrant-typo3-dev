@@ -9,9 +9,9 @@ Linux/Unix machines.
 
 Environment
 --------------
-* __OS__: Ubuntu 14.04 LTS (trusty) x86_64
+* __OS__: Ubuntu 18.04 LTS (bionic) x86_64
 
-* __Database__: MySQL 5.5.x
+* __Database__: MySQL 5.7.x
 
    Following user will be setup on provision:
    ```
@@ -19,13 +19,13 @@ Environment
    ```
    This user is also allowed to connect from outside the virtual machine.
 
-* __PHP__: PHP 7.0.x (with Xdebug v2.5.5)
+* __PHP__: PHP 7.2.x (with Xdebug v2.7.1)
 
 * __MailCatcher__: 0.6.4 (check out http://192.168.13.37:1080)
 
 Installation
 --------------
-*used VirtualBox 5.1.26, Vagrant 1.9.8 & Ansible 2.3.2.0*
+*used VirtualBox 5.2.30, Vagrant 2.2.5 & Ansible 2.8.1*
 
 1. Install both: [Vagrant](https://www.vagrantup.com/downloads.html) & [Ansible](http://docs.ansible.com/intro_installation.html)
 
@@ -58,7 +58,7 @@ Installation
 
 6. Setup TYPO3
 
-     Navigate to http://t3-cms.dev in your browser and follow installation instructions
+     Navigate to http://t3-cms.test in your browser and follow installation instructions
 
 7. Run command `vagrant halt` to shutdown
 

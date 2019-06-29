@@ -1,6 +1,6 @@
 # file: phpcommon/tasks/install.yml
 
-- name: PHP7 | Install PHP Packages
+- name: PHP7.2 | Install PHP Packages
   become: yes
   apt: pkg={{ item }} state=latest
   with_items:

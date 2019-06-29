@@ -3,4 +3,4 @@
 mysql_packages:
   - mysql-server
   - mysql-client
-  - python-mysqldb
+  - python3-pymysql

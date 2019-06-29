@@ -6,8 +6,8 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-  # VM: Ubuntu 14.04 LTS
-  config.vm.box = "ubuntu/trusty64"
+  # VM: Ubuntu 18.04 LTS
+  config.vm.box = "ubuntu/bionic64"
 
   # check for box updates on each startup
   config.vm.box_check_update = false

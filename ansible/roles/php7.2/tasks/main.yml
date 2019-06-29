@@ -1,4 +1,4 @@
-# file: php7/tasks/main.yml
+# file: php7.2/tasks/main.yml
 
 - include: install.yml
 - include: configure.yml

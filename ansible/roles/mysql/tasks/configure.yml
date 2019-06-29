@@ -1,9 +1,9 @@
 # file: mysql/tasks/configure.yml
 
-- name: MySQL | Update the my.cnf
+- name: MySQL | Update the mysqld.cnf
   template:
-    src: etc_mysql_my.cnf.j2
-    dest: /etc/mysql/my.cnf
+    src: etc_mysql_mysql.conf.d_mysqld.cnf.j2
+    dest: /etc/mysql/mysql.conf.d/mysqld.cnf
     owner: root
     group: root
     mode: 0644

@@ -1,9 +1,9 @@
 # file: phpcommon/tasks/configure.yml
 
-- name: PHP7 | Set up APC configuration (apc.ini)
+- name: PHP7.2 | Set up APC configuration (apc.ini)
   template:
-    src: etc_php70_mods-available_apcu.ini.j2
-    dest: /etc/php/7.0/mods-available/apcu.ini
+    src: etc_php72_mods-available_apcu.ini.j2
+    dest: /etc/php/7.2/mods-available/apcu.ini
     owner: root
     group: root
     mode: 0644
@@ -12,8 +12,8 @@
 
 - name: PHP7 | Set up XDebug configuration (xdebug.ini)
   template:
-    src: etc_php70_mods-available_xdebug.ini.j2
-    dest: /etc/php/7.0/mods-available/xdebug.ini
+    src: etc_php72_mods-available_xdebug.ini.j2
+    dest: /etc/php/7.2/mods-available/xdebug.ini
     owner: root
     group: root
     mode: 0644

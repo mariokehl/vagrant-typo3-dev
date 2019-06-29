@@ -9,7 +9,7 @@
   with_items:
     - curl
     - wget
-    - python-software-properties
+    - software-properties-common
 
 - name: Add ppa Repository
   become: yes

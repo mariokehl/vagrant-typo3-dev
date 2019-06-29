@@ -1,0 +1,5 @@
+# file: php7.2/tasks/install.yml
+
+- name: PHP | Make sure php7.2 is installed
+  become: yes
+  apt: pkg=php7.2 state=latest

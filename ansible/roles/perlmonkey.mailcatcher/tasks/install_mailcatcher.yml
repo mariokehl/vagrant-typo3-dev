@@ -24,7 +24,9 @@
     - "{{ mailcatcher_symlinks }}"
   when: not mailcatcher_installed.stat.exists
 
-- name: Create upstart script for mailcatcher
-  template: src=mailcatcher.j2 dest=/etc/init/mailcatcher.conf mode=0644
+- name: Create systemctl script for mailcatcher
+  template: src=mailcatcher.service.j2 dest=/etc/systemd/system/mailcatcher.service mode=0644
   notify:
+    - force systemd to reread configs
     - restart mailcatcher
+    - enable service mailcatcher

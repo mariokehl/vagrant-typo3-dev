@@ -11,5 +11,6 @@ galaxy_info:
         - saucy
         - precise
         - trusty
+        - bionic
   categories:
    - development

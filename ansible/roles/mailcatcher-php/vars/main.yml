@@ -1,7 +1,7 @@
 ---
 mc_ini_file:                       "mailcatcher.ini"
-mc_php_base_path:                  "/etc/php/7.0/mods-available/{{ mc_ini_file }}"
+mc_php_base_path:                  "/etc/php/7.2/mods-available/{{ mc_ini_file }}"
 mc_php_symlink_path:               "../../mods-available/{{ mc_ini_file }}"
-mc_php_cli_path:                   "/etc/php/7.0/cli/conf.d/99-{{ mc_ini_file }}"
-mc_php_apache_path:                "/etc/php/7.0/apache2/conf.d/99-{{ mc_ini_file }}"
+mc_php_cli_path:                   "/etc/php/7.2/cli/conf.d/99-{{ mc_ini_file }}"
+mc_php_apache_path:                "/etc/php/7.2/apache2/conf.d/99-{{ mc_ini_file }}"
 mc_sendmail_cmd:                   "/usr/bin/env {{ ruby_location }}/bin/catchmail"

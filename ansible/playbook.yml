@@ -11,32 +11,32 @@
     - git
     - graphicsmagick
     - imagemagick
-    - openjdk-7-jdk
+    - openjdk-11-jdk
     - unzip
     - mailutils
     - mcrypt
     php_packages:
-    - php7.0-mysql
-    - php7.0-curl
-    - php7.0-imagick
-    - php7.0-gd
-    - php7.0-redis
-    - php7.0-mbstring
-    - php7.0-mcrypt
-    - php7.0-soap
-    - php7.0-xml
-    - php7.0-zip
-    - php7.0-apcu
-    - php7.0-dev #needed for xdebug
+    - php7.2-intl
+    - php7.2-mysql
+    - php7.2-curl
+    - php-imagick
+    - php7.2-gd
+    - php-redis
+    - php7.2-mbstring
+    - php7.2-soap
+    - php7.2-xml
+    - php7.2-zip
+    - php-apcu
+    - php7.2-dev #needed for xdebug
     - php-pear #needed for xdebug
-    - php7.0-xdebug
+    - php-xdebug
     php_ppa: php
   roles:
     - init
     - locale
     - apache
     - mysql
-    - php7
+    - php7.2
     - phpcommon
     - phpcomposer
     - joshualund.ruby-common
